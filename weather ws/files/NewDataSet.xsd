@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="eldar.net"
+	xmlns:tns="eldar.net" elementFormDefault="qualified">
+
+	<element name="NewDataSet">
+		<complexType>
+			<sequence>
+				<element name="Table" type="tns:Table" minOccurs="0"
+					maxOccurs="unbounded"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+
+	<complexType name="Table">
+		<sequence>
+			<element name="Country" type="string"></element>
+			<element name="City" type="string"></element>
+		</sequence>
+	</complexType>
+
+
+</schema>

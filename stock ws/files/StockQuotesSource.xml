@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StockQuotes>
+	<Stock>
+		<Symbol>A</Symbol>
+		<Last>48.65</Last>
+		<Date>1/27/2017</Date>
+		<Time>4:02pm</Time>
+		<Change>+0.48</Change>
+		<Open>48.32</Open>
+		<High>48.83</High>
+		<Low>48.30</Low>
+		<Volume>1527822</Volume>
+		<MktCap>15.65B</MktCap>
+		<PreviousClose>48.17</PreviousClose>
+		<PercentageChange>+1.00%</PercentageChange>
+		<AnnRange>34.15 - 49.48</AnnRange>
+		<Earns>1.40</Earns>
+		<P-E>34.75</P-E>
+		<Name>Agilent Technologies</Name>
+	</Stock>
+</StockQuotes>

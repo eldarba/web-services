@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.eldar.net/StockQuotes"
+	xmlns:tns="http://www.eldar.net/StockQuotes" elementFormDefault="qualified">
+
+	<element name="StockQuotes">
+		<complexType>
+			<sequence>
+				<element name="Stock" type="tns:Stock"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="Stock">
+		<sequence>
+			<element name="Symbol" type="string"></element>
+			<element name="Last" type="string"></element>
+			<element name="Date" type="string"></element>
+			<element name="Time" type="string"></element>
+			<element name="Change" type="string"></element>
+			<element name="Open" type="string"></element>
+			<element name="High" type="string"></element>
+			<element name="Low" type="string"></element>
+			<element name="Volume" type="string"></element>
+			<element name="MktCap" type="string"></element>
+			<element name="PreviousClose" type="string"></element>
+			<element name="PercentageChange" type="string"></element>
+			<element name="AnnRange" type="string"></element>
+			<element name="Earns" type="string"></element>
+			<element name="P-E" type="string"></element>
+			<element name="Name" type="string"></element>
+		</sequence>
+	</complexType>
+
+</schema>

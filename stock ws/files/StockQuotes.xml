@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StockQuotes xmlns="http://www.eldar.net/StockQuotes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eldar.net/StockQuotes StockQuotes.xsd ">
+  <Stock>
+    <Symbol>Symbol</Symbol>
+    <Last>Last</Last>
+    <Date>Date</Date>
+    <Time>Time</Time>
+    <Change>Change</Change>
+    <Open>Open</Open>
+    <High>High</High>
+    <Low>Low</Low>
+    <Volume>Volume</Volume>
+    <MktCap>MktCap</MktCap>
+    <PreviousClose>PreviousClose</PreviousClose>
+    <PercentageChange>PercentageChange</PercentageChange>
+    <AnnRange>AnnRange</AnnRange>
+    <Earns>Earns</Earns>
+    <P-E>P-E</P-E>
+    <Name>Name</Name>
+  </Stock>
+</StockQuotes>

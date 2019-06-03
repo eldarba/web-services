@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NewDataSet xmlns="eldar.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eldar.net NewDataSet.xsd ">
+  <Table>
+    <Country>Country</Country>
+    <City>tel aviv</City>
+  </Table>
+  <Table>
+    <Country>Country</Country>
+    <City>yafo</City>
+  </Table>
+</NewDataSet>
