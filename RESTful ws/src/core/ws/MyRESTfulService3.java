@@ -53,7 +53,7 @@ public class MyRESTfulService3 {
 	// http://localhost:8080/RESTful_ws/rest/service3/person-read-all
 	@Path("person-read-all")
 	@GET
-	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
+	@Produces({ MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML })
 	public List<Person> readPeople() throws SQLException {
 		return personDao.getAllPeople();
 	}
