@@ -12,6 +12,11 @@ public class Calculator {
 		return res;
 	}
 
+	public String greet(Person person) {
+		String name = person.getName();
+		return "Hello " + name;
+	}
+	
 	public int sub(int a, int b) {
 		int res = a - b;
 		return res;
@@ -27,9 +32,5 @@ public class Calculator {
 		return res;
 	}
 
-	public String greet(Person person) {
-		String name = person.getName();
-		return "Hello " + name;
-	}
 
 }
