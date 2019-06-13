@@ -12,6 +12,8 @@ public class MyRESTfulService {
 	@Path("sum")
 	@GET
 	public String sum(@QueryParam("a") int a, @QueryParam("b") int b) {
+		// Response resp = Response.status(Response.Status.OK).entity(String.valueOf(a +
+		// b)).build();
 		return String.valueOf(a + b);
 	}
 

@@ -14,20 +14,21 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 import database.Person;
 import database.PersonDaoDb;
 
-/*this demo is working with adatabase*/
-@Path("service3")
-public class MyRESTfulService3 {
+/*this demo is working with adatabase and Response*/
+@Path("service4")
+public class MyRESTfulService4 {
 
 	private PersonDaoDb personDao = new PersonDaoDb();
 
 	@Context
 	private HttpServletRequest request;
 
-	// http://localhost:8080/RESTful_ws/rest/service3/person-create
+	// http://localhost:8080/RESTful_ws/rest/service4/person-create
 	// method = post
 	// headers:
 	// Content-Type: application/json
@@ -35,10 +36,15 @@ public class MyRESTfulService3 {
 	// {"id":"101", "name":"David", "age":"25"}
 	@Path("person-create")
 	@Consumes({ MediaType.APPLICATION_JSON })
+	@Produces({ MediaType.APPLICATION_JSON })
 	@POST
-	public Void createPerson(Person person) throws SQLException {
-		personDao.addPerson(person);
-		return null;
+	public Response createPerson(Person person) {
+		try {
+			personDao.addPerson(person);
+			return Response.status(Response.Status.OK).entity(person).build();
+		} catch (SQLException e) {
+			return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e.getMessage()).build();
+		}
 	}
 
 	// http://localhost:8080/RESTful_ws/rest/service3/person-read/101
