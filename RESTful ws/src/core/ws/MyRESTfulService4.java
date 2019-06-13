@@ -25,6 +25,7 @@ public class MyRESTfulService4 {
 
 	private PersonDaoDb personDao = new PersonDaoDb();
 
+	// inject servlet objects (request) in the service
 	@Context
 	private HttpServletRequest request;
 

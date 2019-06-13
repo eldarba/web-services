@@ -14,7 +14,7 @@ public class Test {
 			Calculator calcStub = calcService.getCalculatorPort();
 
 			Person person = new Person();
-			person.setName("David Kohen");
+			person.setName("David Katz");
 			String msg = calcStub.greet(person);
 			System.out.println(msg);
 			int val;
